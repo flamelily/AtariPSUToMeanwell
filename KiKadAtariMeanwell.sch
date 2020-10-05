@@ -1,0 +1,287 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	7050 2700 7500 2700
+Wire Wire Line
+	7050 2800 7650 2800
+$Comp
+L power:+5V #PWR0101
+U 1 1 5F374790
+P 7500 2200
+F 0 "#PWR0101" H 7500 2050 50  0001 C CNN
+F 1 "+5V" H 7515 2373 50  0000 C CNN
+F 2 "" H 7500 2200 50  0001 C CNN
+F 3 "" H 7500 2200 50  0001 C CNN
+	1    7500 2200
+	1    0    0    -1  
+$EndComp
+Connection ~ 7500 2700
+Wire Wire Line
+	7500 2700 8200 2700
+$Comp
+L power:GND #PWR0102
+U 1 1 5F3754A0
+P 7650 3300
+F 0 "#PWR0102" H 7650 3050 50  0001 C CNN
+F 1 "GND" H 7655 3127 50  0000 C CNN
+F 2 "" H 7650 3300 50  0001 C CNN
+F 3 "" H 7650 3300 50  0001 C CNN
+	1    7650 3300
+	1    0    0    -1  
+$EndComp
+Connection ~ 7650 2800
+$Comp
+L power:+12V #PWR0103
+U 1 1 5F376388
+P 7850 2400
+F 0 "#PWR0103" H 7850 2250 50  0001 C CNN
+F 1 "+12V" H 7865 2573 50  0000 C CNN
+F 2 "" H 7850 2400 50  0001 C CNN
+F 3 "" H 7850 2400 50  0001 C CNN
+	1    7850 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 2400 7850 3100
+$Comp
+L Connector_Generic:Conn_01x02 5VFan1
+U 1 1 5F378DCB
+P 9300 2250
+F 0 "5VFan1" H 9380 2242 50  0000 L CNN
+F 1 "Conn_01x02" H 9380 2151 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 9300 2250 50  0001 C CNN
+F 3 "https://docs.rs-online.com/0036/0900766b816e81c4.pdf" H 9300 2250 50  0001 C CNN
+	1    9300 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 2800 8300 2800
+$Comp
+L Connector_Generic:Conn_01x02 12VFan1
+U 1 1 5F37C613
+P 9300 3600
+F 0 "12VFan1" H 9380 3592 50  0000 L CNN
+F 1 "Conn_01x02" H 9380 3501 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 9300 3600 50  0001 C CNN
+F 3 "https://docs.rs-online.com/0036/0900766b816e81c4.pdf" H 9300 3600 50  0001 C CNN
+	1    9300 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 3600 8400 3600
+$Comp
+L Connector_Generic:Conn_01x05 FromMeanwell1
+U 1 1 5F37DAA8
+P 9800 2900
+F 0 "FromMeanwell1" H 9880 2942 50  0000 L CNN
+F 1 "Conn_01x05" H 9880 2851 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-05A_1x05_P2.54mm_Vertical" H 9800 2900 50  0001 C CNN
+F 3 "https://docs.rs-online.com/32fb/0900766b813c2e71.pdf" H 9800 2900 50  0001 C CNN
+	1    9800 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 ToAtari1
+U 1 1 5F37EE79
+P 6850 2900
+F 0 "ToAtari1" H 6768 2475 50  0000 C CNN
+F 1 "Conn_01x06" H 6768 2566 50  0000 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-06A_1x06_P2.54mm_Vertical" H 6850 2900 50  0001 C CNN
+F 3 "~" H 6850 2900 50  0001 C CNN
+	1    6850 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F3831BC
+P 6750 1700
+F 0 "#FLG0101" H 6750 1775 50  0001 C CNN
+F 1 "PWR_FLAG" H 6750 1873 50  0000 C CNN
+F 2 "" H 6750 1700 50  0001 C CNN
+F 3 "~" H 6750 1700 50  0001 C CNN
+	1    6750 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0105
+U 1 1 5F384C69
+P 6750 1700
+F 0 "#PWR0105" H 6750 1550 50  0001 C CNN
+F 1 "+5V" H 6765 1873 50  0000 C CNN
+F 2 "" H 6750 1700 50  0001 C CNN
+F 3 "" H 6750 1700 50  0001 C CNN
+	1    6750 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5F385A36
+P 6350 1700
+F 0 "#FLG0102" H 6350 1775 50  0001 C CNN
+F 1 "PWR_FLAG" H 6350 1873 50  0000 C CNN
+F 2 "" H 6350 1700 50  0001 C CNN
+F 3 "~" H 6350 1700 50  0001 C CNN
+	1    6350 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5F3860E2
+P 5950 1700
+F 0 "#FLG0103" H 5950 1775 50  0001 C CNN
+F 1 "PWR_FLAG" H 5950 1873 50  0000 C CNN
+F 2 "" H 5950 1700 50  0001 C CNN
+F 3 "~" H 5950 1700 50  0001 C CNN
+	1    5950 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR0106
+U 1 1 5F3867AF
+P 6350 1700
+F 0 "#PWR0106" H 6350 1800 50  0001 C CNN
+F 1 "-12V" H 6365 1873 50  0000 C CNN
+F 2 "" H 6350 1700 50  0001 C CNN
+F 3 "" H 6350 1700 50  0001 C CNN
+	1    6350 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR0107
+U 1 1 5F38701A
+P 5950 1700
+F 0 "#PWR0107" H 5950 1550 50  0001 C CNN
+F 1 "+12V" H 5965 1873 50  0000 C CNN
+F 2 "" H 5950 1700 50  0001 C CNN
+F 3 "" H 5950 1700 50  0001 C CNN
+	1    5950 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 5F38756E
+P 5500 1700
+F 0 "#FLG0104" H 5500 1775 50  0001 C CNN
+F 1 "PWR_FLAG" H 5500 1873 50  0000 C CNN
+F 2 "" H 5500 1700 50  0001 C CNN
+F 3 "~" H 5500 1700 50  0001 C CNN
+	1    5500 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5F387C81
+P 5500 1700
+F 0 "#PWR0108" H 5500 1450 50  0001 C CNN
+F 1 "GND" H 5505 1527 50  0000 C CNN
+F 2 "" H 5500 1700 50  0001 C CNN
+F 3 "" H 5500 1700 50  0001 C CNN
+	1    5500 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 2800 7650 2900
+Wire Wire Line
+	9100 3700 8300 3700
+Wire Wire Line
+	8300 3700 8300 2800
+Connection ~ 8300 2800
+Wire Wire Line
+	8300 2800 9600 2800
+Wire Wire Line
+	7500 2200 7500 2600
+Wire Wire Line
+	9100 2350 8300 2350
+Wire Wire Line
+	8300 2350 8300 2800
+Wire Wire Line
+	9100 2250 8200 2250
+Wire Wire Line
+	8200 2250 8200 2700
+Connection ~ 8200 2700
+Wire Wire Line
+	8200 2700 9600 2700
+$Comp
+L power:PWR_FLAG #FLG0105
+U 1 1 5F37C74D
+P 5050 1700
+F 0 "#FLG0105" H 5050 1775 50  0001 C CNN
+F 1 "PWR_FLAG" H 5050 1873 50  0000 C CNN
+F 2 "" H 5050 1700 50  0001 C CNN
+F 3 "~" H 5050 1700 50  0001 C CNN
+	1    5050 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0110
+U 1 1 5F37CE96
+P 5050 1700
+F 0 "#PWR0110" H 5050 1450 50  0001 C CNN
+F 1 "Earth" H 5050 1550 50  0001 C CNN
+F 2 "" H 5050 1700 50  0001 C CNN
+F 3 "~" H 5050 1700 50  0001 C CNN
+	1    5050 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 5VFan2
+U 1 1 5F37AF23
+P 9300 1950
+F 0 "5VFan2" H 9380 1942 50  0000 L CNN
+F 1 "Conn_01x02" H 9380 1851 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 9300 1950 50  0001 C CNN
+F 3 "https://docs.rs-online.com/0036/0900766b816e81c4.pdf" H 9300 1950 50  0001 C CNN
+	1    9300 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 2050 8300 2050
+Wire Wire Line
+	8300 2050 8300 2350
+Connection ~ 8300 2350
+Wire Wire Line
+	9100 1950 8200 1950
+Wire Wire Line
+	8200 1950 8200 2250
+Connection ~ 8200 2250
+Connection ~ 7500 2600
+Wire Wire Line
+	7500 2600 7500 2700
+Wire Wire Line
+	7050 2600 7500 2600
+Connection ~ 8400 3100
+Wire Wire Line
+	8400 3600 8400 3100
+Wire Wire Line
+	8400 3100 8400 2900
+Wire Wire Line
+	8400 2900 9600 2900
+Wire Wire Line
+	7050 3100 7850 3100
+Connection ~ 7850 3100
+Wire Wire Line
+	7850 3100 8400 3100
+Connection ~ 7650 2900
+Wire Wire Line
+	7050 2900 7650 2900
+Wire Wire Line
+	7650 2900 7650 3000
+Wire Wire Line
+	7050 3000 7650 3000
+Connection ~ 7650 3000
+Wire Wire Line
+	7650 3000 7650 3300
+$EndSCHEMATC
